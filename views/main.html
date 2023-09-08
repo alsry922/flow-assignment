@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/main.css">
+    <script src="https://kit.fontawesome.com/9d65493088.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <section class="sticky-extension">
+        <div class="title">고정 확장자</div>
+        <ul class="sticky-extension__list">
+            <li>
+                <input type="checkbox" id="bat">
+                <label for="bat">bat</label>
+            </li>
+            <li>
+                <input type="checkbox" id="cmd">
+                <label for="cmd">cmd</label>
+            </li>
+            <li>
+                <input type="checkbox" id="com">
+                <label for="com">com</label>
+            </li>
+            <li>
+                <input type="checkbox" id="cpl">
+                <label for="cpl">cpl</label>
+            </li>
+            <li>
+                <input type="checkbox" id="exe">
+                <label for="exe">exe</label>
+            </li>
+            <li>
+                <input type="checkbox" id="scr">
+                <label for="scr">scr</label>
+            </li>
+            <li>
+                <input type="checkbox" id="js">
+                <label for="js">js</label>
+            </li>
+        </ul>
+    </section>
+    <section class="custom">
+        <div class="title">커스텀 확장자</div>
+        <div class="container">
+            <form method="post" action="/extensions">
+                <input type="text" placeholder="확장자 입력">
+                <button>+ 추가</button>
+            </form>
+            <div class="extension-list">
+                <p>0/200</p>
+                <div class="extension-container">
+                    <button>sh <i class="fa-solid fa-x"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
